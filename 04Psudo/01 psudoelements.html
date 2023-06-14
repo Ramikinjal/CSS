@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h2::after {
+            color: #a76c9f;
+            content: "icon";
+        }
+
+        h2::before {
+            color: blue;
+            content: "*";
+        }
+
+        p::first-line {
+            color: rgb(224, 130, 14);
+            font-size: 35px;
+
+        }
+
+        p::first-letter {
+            color: cadetblue;
+            font-family: 'Courier New', Courier, monospace;
+
+            font-size: 40px;
+        }
+
+        div::selection {
+            color: rgb(11, 176, 205);
+            background-color: darkgoldenrod;
+        }
+
+        input::placeholder {
+
+            color: rgb(216, 83, 27);
+            font-size: 20px;
+            background-color: rgb(154, 196, 113);
+        }
+
+        ::marker {
+            color: red;
+
+        }
+    </style>
+</head>
+
+<body>
+    <h2>About</h2>
+    <h2>Title</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae hic autem dicta voluptatem soluta recusandae.
+        Quibusdam temporibus, odio, animi accusamus vel, voluptatum maiores doloremque libero sit iusto natus ad
+        quisquam.</p>
+    <div>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Autem libero dolore at corporis pariatur
+        voluptatibus, sapiente architecto delectus!</div>
+    <input type="text" placeholder="enter frist name">
+    <ul>
+        <li>tea</li>
+        <li>milk</li>
+    </ul>
+</body>
+
+</html>
