@@ -8,44 +8,14 @@
         integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Document</title>
-    <!-- 
+
     <style>
         * {
             margin: 0;
             padding: 0;
-        }
-
-        .bg {
-            background-color:
-
-
-            /* .icon i {
-                font-size: 50px;
-                color: white;
-                margin: 10px 0;
-            }
-
-            .header f-l ul {
-                display: inline-block;
-                float: left;
-            }
-
-            nav li {
-                display: inline;
-            } */
-
-            */ .social {
-                margin: 10px;
-                padding: 20px;
-                display: inline;
-                float: left;
-
-            } -->
-    <!-- </style> -->
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
+            box-sizing: border-box;
+            transition: all .5s ease-in-out;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         }
 
         header {
@@ -53,7 +23,6 @@
             height: 50px;
             line-height: 50px;
             color: white;
-
         }
 
         .logo {
@@ -66,8 +35,9 @@
             transition: all 200ms;
         }
 
-        .logo i :hover {
+        .logo i:hover {
             transform: rotate(-5deg)scale(1.1);
+            color: #fff;
         }
 
         .fl {
@@ -76,6 +46,12 @@
 
         ul li {
             display: inline;
+            font-size: 20px;
+            padding: 0 10px;
+        }
+
+        .links fl {
+            font-size: 20px;
         }
 
         nav li:hover {
@@ -84,7 +60,12 @@
 
         a {
             text-decoration: none;
-            color: white;
+            color: rgba(255, 255, 255, 0.667);
+            cursor: url(https://abs.twimg.com/emoji/v2/72x72/1f525.png) 36 36, auto;
+        }
+
+        a:hover {
+            color: #FFF;
         }
 
         .social {
@@ -94,7 +75,7 @@
         }
 
         .social .sun {
-            margin: o 10px;
+            margin: 0 10px;
         }
 
         .social i {
@@ -102,6 +83,7 @@
             color: white;
             opacity: 8;
             transition: all 200ms;
+            padding: 5px;
         }
 
         .social i:hover {
@@ -152,7 +134,7 @@
         <div class="social">
             <a href="#"> <i class="fa-brands fa-square-github"></i></a>
             <a href="#"><i class="fa-brands fa-twitter"></i></a>
-            <a href="#"> <i class="fa-solid fa-circle-circle"></i></a>
+            <a href="#"><i class="fa-regular fa-circle"></i></a>
             <select name="list" id="list" class="select pad">
                 <option value="5.3">V5.3</option>
                 <option value="5.2">V5.2</option>
