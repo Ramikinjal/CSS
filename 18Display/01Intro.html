@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            border: 1px solid;
+        }
+
+        .display_blk {
+            display: block;
+            background-color: rgb(17, 0, 255);
+            margin: 50px;
+            padding: 50px;
+            width: 50%;
+            height: 50%;
+        }
+
+        .display_inline {
+            display: inline;
+            background-color: aquamarine;
+            margin: 50px;
+            padding: 50px;
+            /* width: 30%;
+            height: 30%; */
+        }
+
+        .dispaly_inline_blk {
+            display: inline-block;
+            background-color: brown;
+            margin: 50px;
+            padding: 50px;
+            width: 50%;
+            height: 50%;
+
+        }
+    </style>
+</head>
+
+<body>
+    <pre>
+        /* precomposed values */
+        display: block;
+        display: inline;
+        display: inline-block;
+        display: flex;
+        display: inline-flex;
+        display: grid;
+        display: inline-grid;
+        display: flow-root;
+
+        /* box generation */
+        display: none;
+        display: contents;
+
+        /* multi-keyword syntax */
+        display: block flow;
+        display: inline flow;
+        display: inline flow-root;
+        display: block flex;
+        display: inline flex;
+        display: block grid;
+        display: inline grid;
+        display: block flow-root;
+
+        /* other values */
+        display: table;
+        display: table-row; /* all table elements have an equivalent CSS display value */
+        display: list-item;
+
+        /* Global values */
+        display: inherit;
+        display: initial;
+        display: revert;
+        display: revert-layer;
+        display: unset;
+    </pre>
+    <ol>
+        <li>block</li>
+        <li>inline</li>
+        <li>inline-block</li>
+        <li>flex</li>
+        <li>grid</li>
+    </ol>
+    <label for="">lable display inline before div</label>
+    <div>test div as display block</div>
+    <label for="">lable display inline after div</label>
+    <p>p as display block</p>
+    <label for="">lable display inline</label>
+    <span>span display inline</span><br>
+    <br>
+    <br>
+    <h3>display block</h3>
+    before Display block
+    <div class="display_blk">Display BLock</div>
+    After Display Block
+
+    <h3>display inline</h3>
+    Before Display Inline
+    <div class="display_inline">Display Inline</div>
+    After Display Inline
+
+    <h3>display inline-block</h3>
+    Before Display inline-block
+    <div class="dispaly_inline_blk">inline-block</div>
+    After display inline-block
+
+
+
+
+</body>
+
+</html>
