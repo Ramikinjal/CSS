@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        .container {
+            width: 1400px;
+            margin: 0 auto;
+        }
+
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .justify {
+            justify-content: space-between;
+        }
+
+        .align {
+            align-items: center;
+        }
+
+
+
+
+
+        header {
+            background-color: bisque;
+            padding: 10px 0;
+        }
+
+        .list ul li {
+            display: inline-block;
+            list-style: none;
+        }
+
+        .list ul li a {
+            color: #000;
+            padding: 0 10px;
+            font-size: 20px;
+            text-transform: capitalize;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="row justify  align ">
+                <div class="col">
+                    <div class="logo">
+                        <h2>logo</h2>
+                        <!-- <img src="../" alt=""> -->
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="list">
+                        <ul>
+                            <li><a href="#">home</a></li>
+                            <li><a href="#">about</a></li>
+                            <li><a href="#">help</a></li>
+                            <li><a href="#">contact</a></li>
+                            <li><a href="#">search</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </header>
+</body>
+
+</html>

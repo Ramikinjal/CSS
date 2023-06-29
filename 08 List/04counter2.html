@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* body {
+            counter-reset: h2;
+        } */
+
+        h2::before {
+            counter-increment: h2;
+            content: counter(h2);
+            margin: 0 auto;
+            padding: 0 auto;
+            color: blueviolet;
+            counter-reset: p;
+        }
+
+
+        p::before {
+            counter-increment: p;
+            content: counter(p);
+            margin: 0 auto;
+            padding: 0 auto;
+            color: rgb(226, 43, 49);
+
+        }
+
+        .secound h2 {
+            color: red;
+        }
+
+        .aaa h2 {
+
+            color: aqua;
+        }
+
+        h1:first-letter {
+            display: block;
+            font-size: 300px;
+            color: aquamarine;
+        }
+
+        h1::first-line {
+            display: block;
+            font-size: 30px;
+            color: aquamarine;
+        }
+
+        /* h1::after {
+            content: "lkjhgfpoikujyhtf";
+        } */
+
+        h1 {
+            width: 50%;
+            border: 1px solid;
+            position: relative;
+        }
+
+        h1::before {
+            bottom: 0;
+            position: absolute;
+            content: "😊";
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+
+        <h2>Front End</h2>
+        <p>html</p>
+        <p>css</p>
+        <p>java</p>
+        <p>bootstrap</p>
+        <p>react js</p>
+    </div>
+
+    <div class="secound">
+
+        <h2>Back End</h2>
+        <p>php</p>
+        <p>database</p>
+        <p>java</p>
+    </div>
+
+    <div class="aaa">
+
+        <h2>Testing</h2>
+        <p> laravall</p>
+        <p>full strak</p>
+    </div>
+
+
+    <h1> <span>Lorem</span> ipsum dolor sit amet Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis at
+        corrupti nulla ipsa praesentium ipsum deserunt quam expedita vitae. Ipsum excepturi molestiae saepe explicabo,
+        itaque obcaecati sequi quod vitae illo aperiam fuga dolorum delectus sint sit vel repellat, eligendi dignissimos
+        deserunt facere, accusantium perferendis officiis. Repudiandae, qui laborum porro, animi id blanditiis provident
+        maxime dolor odit expedita sed aut mollitia quidem? Voluptatum quidem, dolore excepturi enim cupiditate nemo id
+        quas vel, ipsam hic, similique obcaecati. Quidem et accusamus quibusdam sapiente in sed numquam praesentium
+        aliquid. Delectus fuga tempore deserunt quos ut, sit ipsam nostrum at dolores assumenda neque, possimus vitae..
+    </h1>
+
+
+
+
+</body>
+
+</html>
