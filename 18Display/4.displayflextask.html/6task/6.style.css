@@ -6,10 +6,12 @@
 }
 
 .container {
-    width: 1600px;
+    width: 1140px;
     margin: 0 auto;
     background-color: rgb(131, 178, 178);
-    padding: 15px;
+    /* padding: 15px; */
+    padding: 0 12px;
+
 }
 
 h3 {
@@ -31,14 +33,18 @@ h4 {
 
 }
 
-.justify-content {
-    justify-content: center;
-}
+/* .justify-content {
+    justify-content: center;} */
 
 .row {
     display: flex;
     flex-wrap: wrap;
-    margin-top: 30px;
+    column-gap: 108px;
+    justify-content: center;
+
+    /* margin-top: 30px; */
+    justify-content: center;
+
 }
 
 
