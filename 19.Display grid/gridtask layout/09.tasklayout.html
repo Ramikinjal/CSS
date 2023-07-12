@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            /* border: 1px solid; */
+            /* box-sizing: border-box; */
+        }
+
+        #layout {
+            margin: auto;
+            width: 50%;
+            display: grid;
+            grid-template-columns: 200px 565px;
+            grid-template-rows: 80px 200px 200px 80px;
+            grid-template-areas:
+                "header header"
+                "nav article"
+                "ads article"
+                "ads footer";
+            box-shadow: 10px 20px 10px 20px rgb(199, 90, 133);
+        }
+
+        .col1,
+        .col2,
+        .col3,
+        .col4,
+        .col5 {
+            background-color: rgb(199, 107, 14);
+            margin: 5px;
+        }
+
+
+        .col1 {
+            grid-area: header;
+        }
+
+        .col2 {
+            grid-area: nav;
+        }
+
+        .col3 {
+            grid-area: article;
+        }
+
+        .col4 {
+            grid-area: ads;
+        }
+
+        .col5 {
+            grid-area: footer;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="layout">
+        <div class="col1">header</div>
+        <div class="col2">nav</div>
+        <div class="col3">Article</div>
+        <div class="col4">Ads</div>
+        <div class="col5">Footer</div>
+    </div>
+</body>
+
+</html>
