@@ -6,29 +6,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        #parentcontainer {
+        /* #parentcontainer {
             display: grid;
             place-items: center;
             background-color: grey;
-            height: 50vh;
+            height: 300px;
 
+        } */
+        #parentcontainer {
+            display: grid;
+            place-items: center;
+            background-color: gray;
+            height: 100vh;
+            text-align: center;
         }
 
 
-        #chidcontainer {
-            height: 50px;
-            width: 50px;
-            background-color: aqua;
+        #childcontainer {
+            height: 100px;
+            width: 100px;
+            background-color: palevioletred;
         }
     </style>
 </head>
 
 <body>
     <div id="parentcontainer">
-        <div class="childcontainer" id="childcontainer">
-            lorem ipsum
-        </div>
+        <div id="childcontainer">Rami</div>
     </div>
+
+
+
 </body>
 
 </html>
