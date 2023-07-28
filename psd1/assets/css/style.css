@@ -52,7 +52,7 @@ header {
 
 .navbar_bg {
     background-color: #333333;
-    padding: 15px 0;
+    padding: 10px 0;
     border-radius: 20px;
 }
 
@@ -67,7 +67,7 @@ header {
 }
 
 .header_text ul li a {
-    padding: 0 70px;
+    padding: 0 58px;
     font-size: 17px;
     line-height: 29px;
     color: #ffffff;
