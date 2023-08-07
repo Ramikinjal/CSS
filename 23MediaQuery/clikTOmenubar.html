@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel=" stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .flex {
+            display: flex;
+            justify-content: space-between;
+            margin: 0 auto;
+            width: 90%;
+            /* padding: 20px; */
+            background-color: rgb(174, 66, 66);
+        }
+
+        main {
+            /* width: 50%; */
+            position: relative;
+            background-color: black;
+            color: white;
+            margin: 0 auto;
+            /* line-height: 2; */
+            font-size: 30px;
+        }
+
+        input[type="checkbox"] {
+            display: none;
+        }
+
+        :checked+ul {
+            right: 0%;
+            /* display: block; */
+        }
+
+        ul {
+            position: absolute;
+            top: 50px;
+            right: 100%;
+            width: 100%;
+            background-color: rgb(51, 217, 148);
+            list-style: none;
+            transition: all 0.5s;
+            /* display: none;
+            list-style: none; */
+        }
+    </style>
+
+
+
+
+</head>
+
+<body>
+
+
+    <div class="main">
+        <div class="flex">
+            <div class="logo">logo</div>
+            <label for="a">
+                <i class="fa-solid fa-bars"></i>
+            </label>
+
+        </div>
+
+        <input type="checkbox" id="a">
+        <ul>
+            <li>home</li>
+            <li>about</li>
+            <li>contact us</li>
+            <li>service</li>
+        </ul>
+    </div>
+
+</body>
+
+</html>
