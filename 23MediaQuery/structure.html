@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            border: 1px solid blue;
+
+        }
+
+        .container {
+            width: 100%;
+            padding-right: 30px;
+            padding-left: 30px;
+            margin-right: auto;
+            margin-left: auto;
+        }
+
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+            margin-right: -30px;
+            margin-left: -30px;
+        }
+
+        .row>* {
+            width: 100%;
+            max-width: 100%;
+            padding-right: 30px;
+            padding-left: 30px;
+        }
+
+        .col_100 {
+            width: 100%;
+        }
+
+        .col_25 {
+            width: 25%;
+        }
+
+        .col_50 {
+            width: 50%;
+        }
+
+        .col_33 {
+            width: 33.33%;
+        }
+
+        .col_20 {
+            width: 20%;
+        }
+
+        .col_16 {
+            width: 16.66%;
+        }
+
+
+
+        @media(min-width:576px) {
+            .container {
+                max-width: 540px
+            }
+
+            .col_100 {
+                width: 100%;
+            }
+
+            .col_50 {
+                width: 100%;
+            }
+
+
+
+            .col_33 {
+                width: 100%;
+            }
+
+            .col_25 {
+                width: 100%;
+            }
+
+            .col_20 {
+                width: 100%;
+            }
+
+            .col_16 {
+                width: 100%;
+            }
+
+
+        }
+
+        @media(min-width:768px) {
+            .container {
+                max-width: 720px;
+            }
+
+            .col_100 {
+                width: 100%;
+            }
+
+            .col_50 {
+                width: 50%;
+            }
+
+            .col_33 {
+                width: 50%;
+            }
+
+            .col_25 {
+                width: 50%;
+            }
+
+            .col_20 {
+                width: 50%;
+            }
+
+            .col_16 {
+                width: 33.33%;
+
+            }
+        }
+
+        @media(min-width:992px) {
+            .container {
+                max-width: 940px;
+
+            }
+
+            .col_100 {
+                width: 100%;
+            }
+
+            .col_50 {
+                width: 33.33%;
+            }
+
+
+
+            .col_33 {
+                width: 25%;
+            }
+
+            .col_25 {
+                width: 50%;
+            }
+
+            .col_20 {
+                width: 50%;
+            }
+
+            .col_16 {
+                width: 50%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            kinjal
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col_100">
+                hello
+            </div>
+        </div>
+
+
+
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col_50">HTML</div>
+            <div class="col_50">CSS</div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col_33">HTML</div>
+            <div class="col_33">CSS</div>
+            <div class="col_33">Media Query</div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col_25">HTML</div>
+            <div class="col_25">CSS</div>
+            <div class="col_25">Media Query</div>
+            <div class="col_25">Bootstrap</div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col_20">HTML</div>
+            <div class="col_20">CSS</div>
+            <div class="col_20">Media Query</div>
+            <div class="col_20">Bootstrap</div>
+            <div class="col_20">Java</div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col_16">HTML</div>
+            <div class="col_16">CSS</div>
+            <div class="col_16">Media Query</div>
+            <div class="col_16">Bootstrap</div>
+            <div class="col_16">Java</div>
+            <div class="col_16">React Js</div>
+
+        </div>
+    </div>
+
+
+</body>
+
+</html>
