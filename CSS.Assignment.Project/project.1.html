@@ -1,144 +1,153 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
-      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <style>
-      * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-        border: 1px solid;
-      }
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      border: 1px solid;
+    }
 
-      img {
-        width: 100%;
-        height: 100%;
-        /* object-fit: cover; */
-      }
-      .ti {
-        background-color: black;
-        color: white;
-      }
+    img {
+      width: 100%;
+      height: 100%;
+      /* object-fit: cover; */
+    }
 
-      .wrapper {
-        gap: 15px;
-        width: 80%;
-        margin: auto;
-        display: grid;
-        grid-template-rows: auto;
-        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-        grid-template-areas:
-          "col1 col1 col1 col2 ti"
-          "col3 col4 col4 col5 ti"
-          "col6 col6 col7 col7 ti"
-          "col8 col8 col9 col9 ti";
-      }
-      .col1 {
-        grid-area: col1;
-      }
-      .col2 {
-        grid-area: col2;
-      }
-      .col3 {
-        grid-area: col3;
-      }
-      .col4 {
-        grid-area: col4;
-      }
-      .col5 {
-        grid-area: col5;
-      }
-      .col6 {
-        grid-area: col6;
-      }
-      .col7 {
-        grid-area: col7;
-      }
-      .col8 {
-        grid-area: col8;
-      }
-      .col9 {
-        grid-area: col9;
-      }
-      .ti {
-        grid-area: ti;
-      }
-      /* .col10 {
+    .ti {
+      background-color: black;
+      color: white;
+    }
+
+    .wrapper {
+      gap: 15px;
+      width: 80%;
+      margin: auto;
+      display: grid;
+      grid-template-rows: auto;
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+      grid-template-areas:
+        "col1 col1 col1 col2 ti"
+        "col3 col4 col4 col5 ti"
+        "col6 col6 col7 col7 ti"
+        "col8 col8 col9 col9 ti";
+    }
+
+    .col1 {
+      grid-area: col1;
+    }
+
+    .col2 {
+      grid-area: col2;
+    }
+
+    .col3 {
+      grid-area: col3;
+    }
+
+    .col4 {
+      grid-area: col4;
+    }
+
+    .col5 {
+      grid-area: col5;
+    }
+
+    .col6 {
+      grid-area: col6;
+    }
+
+    .col7 {
+      grid-area: col7;
+    }
+
+    .col8 {
+      grid-area: col8;
+    }
+
+    .col9 {
+      grid-area: col9;
+    }
+
+    .ti {
+      grid-area: ti;
+    }
+
+    /* .col10 {
           grid-area: col10;
         } */
-      @media (max-width: 550px) {
-        .wrapper {
-          display: grid;
-          grid-template-rows: auto;
-          grid-template-columns: 1fr 1fr 1fr;
-          grid-template-areas:
-            "col1 col2 ti"
-            "col3 col4 ti"
-            "col5 col6 ti"
-            "col7 col8 ti"
-            "col9 col9 ti";
-        }
+    @media (max-width: 550px) {
+      .wrapper {
+        display: grid;
+        grid-template-rows: auto;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-areas:
+          "col1 col2 ti"
+          "col3 col4 ti"
+          "col5 col6 ti"
+          "col7 col8 ti"
+          "col9 col9 ti";
       }
-      @media (max-width: 320px) {
-        .wrapper {
-          display: grid;
-          grid-template-rows: auto;
-          grid-template-columns: 1fr 1fr;
+    }
 
-          grid-template-areas:
-            "col1 ti"
-            "col2 ti"
-            "col3 ti"
-            "col4 ti"
-            "col5 ti"
-            "col6 ti"
-            "col7 ti"
-            "col8 ti"
-            "col9 ti";
-        }
+    @media (max-width: 320px) {
+      .wrapper {
+        display: grid;
+        grid-template-rows: auto;
+        grid-template-columns: 1fr 1fr;
+
+        grid-template-areas:
+          "col1 ti"
+          "col2 ti"
+          "col3 ti"
+          "col4 ti"
+          "col5 ti"
+          "col6 ti"
+          "col7 ti"
+          "col8 ti"
+          "col9 ti";
       }
-    </style>
-  </head>
-  <body>
-    <div class="container">
-      <div class="wrapper">
-        <img class="col1" src="../page/imges/as1.png" alt="" />
-        <img class="col2" src="../page/imges/as2.png" alt="" />
-        <img class="col3" src="../page/imges/as3.png" alt="" />
-        <img class="col4" src="../page/imges/as4.png" alt="" />
-        <img class="col5" src="../page/imges/as5.png" alt="" />
-        <img class="col6" src="../page/imges/as6.png" alt="" />
-        <img class="col7" src="../page/imges/as7.png" alt="" />
-        <img class="col8" src="../page/imges/as8.png" alt="" />
-        <img class="col9" src="../page/imges/as9.png" alt="" />
-        <!-- <img class="col10" src="../page/imges/as10.png" alt="" /> -->
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="wrapper">
+      <img class="col1" src="./imges/as1.png" alt="" />
+      <img class="col2" src="./imges/as2.png" alt="" />
+      <img class="col3" src="./imges/as3.png" alt="" />
+      <img class="col4" src="./imges/as4.png" alt="" />
+      <img class="col5" src="./imges/as5.png" alt="" />
+      <img class="col6" src="./imges/as6.png" alt="" />
+      <img class="col7" src="./imges/as7.png" alt="" />
+      <img class="col8" src="./imges/as8.png" alt="" />
+      <img class="col9" src="./imges/as9.png" alt="" />
+      <!-- <img class="col10" src="../page/imges/as10.png" alt="" /> -->
 
-        <div class="ti">
-          <div class="text">
-            <h3>SHUTTER</h3>
-            <h3>HOME</h3>
-            <h3>PHOTOS</h3>
-            <h3>BIO</h3>
-            <h3>BIO</h3>
-            <h3>BLOG</h3>
-            <h3>CONTACT</h3>
-          </div>
-          <div class="icons">
-            <i class="fa-brands fa-facebook-f"></i>
-            <i class="fa-brands fa-twitter"></i>
-            <i class="fa-brands fa-instagram"></i>
-          </div>
+      <div class="ti">
+        <div class="text">
+          <h3>SHUTTER</h3>
+          <h3>HOME</h3>
+          <h3>PHOTOS</h3>
+          <h3>BIO</h3>
+          <h3>BIO</h3>
+          <h3>BLOG</h3>
+          <h3>CONTACT</h3>
+        </div>
+        <div class="icons">
+          <i class="fa-brands fa-facebook-f"></i>
+          <i class="fa-brands fa-twitter"></i>
+          <i class="fa-brands fa-instagram"></i>
         </div>
       </div>
     </div>
-  </body>
+  </div>
+</body>
 </html>
